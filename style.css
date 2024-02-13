@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat:wght@400..700&family=Dosis:wght@200..800&family=Fugaz+One&family=Honk&family=Kalnia:wght@100..700&family=Protest+Strike&family=Sacramento&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat:wght@400..700&family=Dosis:wght@200..800&family=Fugaz+One&family=Honk&family=Kalnia:wght@100..700&family=Miltonian+Tattoo&family=Protest+Strike&family=Sacramento&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 20px;
+
+}
+
+#logo{
+	font-size: 30px;
+	font-weight: bolder;
+	color: whitesmoke;
+	letter-spacing: 5px;
+	font-family: "Miltonian Tattoo", serif;
+  background: -webkit-linear-gradient(orange,peachpuff, deepskyblue);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+.navBar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: darkslateblue;
+	z-index:1;
+}
+
+.allsections{
+	position: relative;
+	top: 80px;
+	width: 100%;
+	color: black;
+	background-image: linear-gradient(to bottom,
+#FBF9F1,#FBF9F1,#DED9C4,#FFDEFA,#E7FBBE,
+#4bdede,#CAB8FF,peachpuff);
+}
+
+
+
+.sections{
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+}
+
+.mymenus{
+	font-weight: bolder;
+	color: white;
+}
+
+ul .mymenus{
+	color: white;
+}
+
+.mymenus:hover{
+	/*text-decoration: underline 2px solid orange;*/
+	color: orange;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/* home section */
+.home-section{
+	background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--2bZIjPGC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/d4tvukbt5mra37cvwklk.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 50px;
+}
+
+.page-head{
+	padding: 35px;
+	text-align: center;
+	font-family: "Kalnia", serif;
+	font-weight: bolder;
+	letter-spacing: 3px;
+	color: orange;
+	font-size: xx-large;
+
+}
+
+/**/
+/*.home-section,.about-section,.contact-section,.skills-section,.project-section,.edu-section{
+	padding: 40px;
+	height: 800px;
+}*/
+
+
+/*about*/
+.intro {
+padding: 30px;
+margin-top:200px;
+margin-left: 30px;
+}
+
+.intro #h1{
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+.intro #h2 i{
+	word-spacing: 3px;
+	color: darkslateblue;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 60px;
+}
+
+.intro #h3{
+	word-spacing: 3px;
+	color: darkorange;
+	font-family: serif;
+	font-weight: bolder;
+	font-size: 40px;
+
+}
+
+.about{
+	display: flex;
+	margin-left: 80px;
+
+}
+
+.myphoto img{
+	margin-left: 60px;
+	/*padding: 40px;*/
+	height: 450px;
+	width: 350px;
+	border-radius: 50%;
+}
+
+.aboutme {
+	padding: 40px;
+	text-align: justify;
+	height: 30%;
+	width: 60%;
+	margin-left: 100px;
+	line-height: 50px;
+	text-indent: 70px;
+}
+
+.aboutme p{
+	font-family: "Caveat", cursive;
+	font-weight: bold;
+	font-size: 25px;
+	color: dimgrey;
+}
+
+
+/*contact*/
+
+.cont{
+	display: flex;
+}
+
+.mydetails{
+	width: 50%;
+	
+}
+.enquiry{
+	height: 400px;
+	width: 50%;
+	padding: 50px;
+	margin-right: 50px;
+	margin-top: 60px;
+}
+
+.enquiry #id{
+	width: 430px;
+	height: 50px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.enquiry #id:hover{
+	  border-color: darkslateblue;
+}
+
+.enquiry textarea{
+	border-radius: 10px;
+}
+
+.enquiry textarea:hover{
+	border-color: darkslateblue;
+}
+
+.enquiry #btn{
+	width: 100px;
+	height: 50px;
+	border-radius: 40px;
+	color: orange;
+	font-weight: bolder;
+	background-color: darkslateblue;
+}
+
+.mydetails {
+	padding: 80px;
+	line-height: 60px;
+}
+
+.mydetails div{
+	margin-left: 50px;
+	color: darkslateblue;
+	font-family: sans-serif;
+}
+
+.mydetails svg{
+	color: orange;
+	width: 20px;
+	height: 20px;
+}
+
+/*others*/
+
+.skill img{
+	height: 500px;
+	width: 80%;
+	opacity: 0.2;
+}
+
+.carousel-caption h5{
+	color: black;
+	font-family: monospace;
+	text-decoration: underline;
+	font-weight: bolder;
+	font-size:50px;
+	letter-spacing: 3px;
+	
+}
+
+.carousel-caption p{
+	color: grey;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size:40px;
+	
+}
+
+.carousel-caption{
+	margin-bottom: 100px;
+}
+
+/**/
+.card-text{
+	font-size: small;
+}
+
+
+
+
+.mydetails a{
+	text-decoration: none;
+}
+.mydetails div:hover{
+	cursor: pointer;
+}
